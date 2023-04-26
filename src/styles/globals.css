@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face { font-family: Ndot; src: url('font/Ndot-55.otf'); } 
+@font-face { font-family: Ndot; font-weight: bold; src: url('font/Ndot-55.otf');}
+
+@font-face { font-family: bolt; src: url('font/bold.otf'); } 
+@font-face { font-family: bolt; font-weight: bold; src: url('font/bold.otf');}
+
+@font-face { font-family: NType82; src: url('font/NType82Mono-Regular.otf'); } 
+@font-face { font-family: NType82; font-weight: bold; src: url('font/NType82Mono-Regular.otf');}
+
+@font-face { font-family: bolt; src: url('font/bold.otf'); } 
+@font-face { font-family: bolt; font-weight: bold; src: url('font/bold.otf');}
+
+@font-face { font-family: LetteraMono; src: url('font/LetteraMono.otf'); } 
+@font-face { font-family: LetteraMono; font-weight: bold; src: url('font/LetteraMono.otf');}
+
+.Ndot {
+    font-family: Ndot;
+}
+
+.bolt {
+  font-family: bolt;
+}
+
+.NType82 {
+  font-family: NType82;
+}
+
+.LetteraMono {
+  font-family: LetteraMono;
+}
+
+
+@media screen and (max-width: 840px) {
+  .indexc {
+    display: block;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .sections {
+    width: 100%;
+  }
+  .contents {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  .images {
+    display: none;
+  }
 }
