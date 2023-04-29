@@ -51,6 +51,31 @@ html {
     padding-top: 3rem;
   }
   .images {
-    display: none;
+    /* display: none; */
+    /* width: 800px; */
+    width: 100%;
+    /* height: 50%; */
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .cardrow {
+    display: block;
+  }
+  .centerdiv {
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+.block-hoe {
+  padding: 10px;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .centerdiv {
+    margin: 10px;
   }
 }

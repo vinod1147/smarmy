@@ -15,21 +15,21 @@ const Navbar = () => {
             <div className='sticky left-0 top-0 w-full z-10 ease-in duration-300 dark:bg-black Ndot bg-white shadow-md'>
                 <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 dark:text-white text-black'>
                     <div href='/'>
-                        <h1 className='font-bold text-4xl hover:text-gray-300'>
+                        <h1 className='font-bold text-4xl hover:text-gray-500 dark:hover:text-gray-300'>
                             <Link href='/'>SCIENCEMADNESS</Link >
                         </h1>
                     </div>
                     <ul className='hidden sm:flex'>
-                        <li className='p-4 hover:text-gray-300'>
+                        <li className='p-4 hover:text-gray-500 dark:hover:text-gray-300'>
                             <Link href='/' >HOME</Link>
                         </li>
-                        <li className='p-4 hover:text-gray-300'>
+                        <li className='p-4 hover:text-gray-500 dark:hover:text-gray-300'>
                             <Link href='/about'>ABOUT</Link>
                         </li>
-                        <li className='p-4 hover:text-gray-300'>
+                        <li className='p-4 hover:text-gray-500 dark:hover:text-gray-300'>
                             <Link href='/contact'>CONTACT</Link>
                         </li>
-                        <li className='p-4 hover:text-gray-300'>
+                        <li className='p-4 hover:text-gray-500 dark:hover:text-gray-300'>
                             <Link href='/resource'>RESOURCE</Link>
                         </li>
                     </ul>
